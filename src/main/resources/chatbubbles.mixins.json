@@ -6,6 +6,8 @@
   "mixins": [
   ],
   "client": [
+    "MixinChatHud",
+    "MixinEntityRenderer"
   ],
   "injectors": {
     "defaultRequire": 1
