@@ -138,7 +138,7 @@ public class ChatBubbleRenderer {
 
 		/* Filler between the middle and the right, if needed */
 		if (fillerWidth != 0) {
-			this.renderTexture(matrices, TEXTURE_FILL.location(), TEXTURE_LEFT.width() + fillerWidth + TEXTURE_MIDDLE.width(), startY,  fillerWidth, TEXTURE_LEFT.height());
+			this.renderTexture(matrices, TEXTURE_FILL.location(), TEXTURE_LEFT.width() + fillerWidth + TEXTURE_MIDDLE.width(), startY, fillerWidth, TEXTURE_LEFT.height());
 		}
 
 		/* Right side of the bubble */
@@ -176,11 +176,11 @@ public class ChatBubbleRenderer {
 	 * Render a texture at the given x and y co-ordinates.
 	 *
 	 * @param matrices MatrixStack for positioning.
-	 * @param texture Identifier representing the texture.
-	 * @param sX Start X co-ordinate.
-	 * @param sY Start Y co-ordinate.
-	 * @param width Texture width on the screen.
-	 * @param height Texture height on the screen.
+	 * @param texture  Identifier representing the texture.
+	 * @param sX       Start X co-ordinate.
+	 * @param sY       Start Y co-ordinate.
+	 * @param width    Texture width on the screen.
+	 * @param height   Texture height on the screen.
 	 */
 	private void renderTexture(MatrixStack matrices, Identifier texture, float sX, float sY, float width, float height) {
 		Matrix4f model = matrices.peek().getPositionMatrix();

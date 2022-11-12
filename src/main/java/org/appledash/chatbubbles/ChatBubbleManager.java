@@ -54,7 +54,7 @@ public class ChatBubbleManager {
 		assert mc.world != null;
 
 		return mc.world.getPlayers().stream()
-				.anyMatch(p -> p.getName().getString().equals(username));
+			.anyMatch(p -> p.getName().getString().equals(username));
 	}
 
 	public Entry getCurrentEntry(String username) {
